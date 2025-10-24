@@ -1,0 +1,89 @@
+.tsu-id-card {
+  width: 400px; /* increased width for QR code */
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: #002244; /* TSU dark blue */
+  color: #fff;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  position: relative;
+  padding-bottom: 16px; /* extra space for QR */
+}
+
+.tsu-card-header {
+  width: 100%;
+  height: 120px; /* slightly taller header for bigger logo */
+  background: url('https://www.tnstate.edu/images/campus-photo.jpg') center/cover no-repeat;
+  position: relative;
+}
+
+.tsu-logo {
+  width: 100px; /* increased logo size */
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.tsu-photo-container {
+  margin-top: -50px; /* adjusted for taller header */
+  border-radius: 50%;
+  border: 3px solid #fff;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+}
+
+.tsu-student-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tsu-student-info {
+  text-align: center;
+  margin-top: 8px;
+}
+
+.tsu-student-name {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.tsu-student-role {
+  font-size: 14px;
+  opacity: 0.85;
+  margin-top: 2px;
+}
+
+.tsu-student-balances {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 12px;
+  padding: 12px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.balance-label {
+  font-size: 10px;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.balance-value {
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* QR code container */
+.tsu-qr-container {
+  margin-top: 12px;
+  width: 80px;
+  height: 80px;
+}
+

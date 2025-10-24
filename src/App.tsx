@@ -1,13 +1,14 @@
 import React from 'react';
 import DigitalIdCard from './DigitalIdCard';
+import QRCodeImage from './assets/download.png'; 
 
 const student = {
-  stuid: '12345',
+  stuid: 'T00647864',
   name: 'Jamyaha Cleckley',
-  college: 'Tennessee State University',
-  gender: 'Female',
-  dob: '01/01/2000',
+  diningDollars: '200.00',
+  classification: 'Senior',
   photoUrl: 'https://i.postimg.cc/4dRvz9Bp/IMG-9161.jpg',
+  qrCodeUrl: QRCodeImage,
 };
 
 function App() {
@@ -19,3 +20,5 @@ function App() {
 }
 
 export default App;
+
+
