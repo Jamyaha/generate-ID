@@ -1,7 +1,7 @@
 import React from 'react';
 import DigitalIdCard from './DigitalIdCard';
 import QRCodeImage from './assets/download.png'; 
-import UniversityStrip from './assets/download.jpg';
+import UniversityStrip from './assets/tsu.jpg';
 
 const student = {
   stuid: 'T00647864',

@@ -35,7 +35,7 @@
   top: 60px; /* below logo */
   left: 0;
   width: 100%;
-  height: 60px; /* short strip */
+  height: 80px; /* short strip */
   background-size: cover;
   background-position: center;
   z-index: 1; /* behind photo but above header */

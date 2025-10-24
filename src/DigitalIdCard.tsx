@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './DigitalIdCard.css';
-import StudentPhoto from './assets/student-photo.jpg'; // local photo
+import StudentPhoto from './assets/student-photo.jpg';
+import TSUStrip from './assets/tsu.jpg';
 
 interface Student {
   stuid: string;
@@ -8,12 +9,11 @@ interface Student {
   diningDollars: string;
   classification: string;
   photoUrl?: string;
-  qrCodeUrl?: string; // optional QR code image
+  qrCodeUrl?: string;
 }
 
 const TSULogo = 'https://www.tnstate.edu/publications/images/Logo_BlueOnWhite_2170w.png';
 const QR_PLACEHOLDER = 'https://via.placeholder.com/80.png?text=QR';
-const UniversityStrip = 'https://www.tnstate.edu/images/campus-photo.jpg'; // banner strip image
 
 const DigitalIdCard: React.FC<{ student: Student }> = ({ student }) => {
   const [photoError, setPhotoError] = useState(false);
@@ -36,10 +36,10 @@ const DigitalIdCard: React.FC<{ student: Student }> = ({ student }) => {
           />
         )}
 
-        {/* University strip below logo */}
+        {/* University banner strip */}
         <div
           className="tsu-banner-strip"
-          style={{ backgroundImage: `url(${UniversityStrip})` }}
+          style={{ backgroundImage: `url(${TSUStrip})` }}
         ></div>
       </div>
 
